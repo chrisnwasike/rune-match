@@ -135,10 +135,10 @@ Rune Match is designed to integrate with [The Secret World](https://secretsotw.c
 
 ## Credits
 
-- Game design and development: Chris Nwasike [ChrisDBuilder]
+- Game design and development:  [ChrisDBuilder](chrisnwasike)
 - Norse rune designs based on historical Elder Futhark runes
 - Nordic-themed special pieces inspired by Norse mythology
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
