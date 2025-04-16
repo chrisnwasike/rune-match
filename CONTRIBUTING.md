@@ -15,7 +15,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Table of Contents
 
 - [I Have a Question](#i-have-a-question)
-  - [I Want To Contribute](#i-want-to-contribute)
+- [I Want To Contribute](#i-want-to-contribute)
   - [Reporting Bugs](#reporting-bugs)
   - [Suggesting Enhancements](#suggesting-enhancements)
   - [Your First Code Contribution](#your-first-code-contribution)
@@ -28,7 +28,7 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 
 ## I Have a Question
 
-> If you want to ask a question, we assume that you have read the available [Documentation](https://github.com/chrisnwasike/rune-match/wiki).
+> If you want to ask a question, we assume that you have read the available [Documentation](https://github.com/chrisnwasike/rune-match/wiki/Rune-Match-Documentation).
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/chrisnwasike/rune-match/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
@@ -108,7 +108,7 @@ This section guides you through submitting an enhancement suggestion for Rune Ma
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://github.com/chrisnwasike/rune-match/wiki) carefully and find out if the functionality is already covered, maybe by an individual configuration.
+- Read the [documentation](https://github.com/chrisnwasike/rune-match/wiki/Rune-Match-Documentation) carefully and find out if the functionality is already covered, maybe by an individual configuration.
 - Perform a [search](https://github.com/chrisnwasike/rune-match/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
 - Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
 
