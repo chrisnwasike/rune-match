@@ -1,6 +1,6 @@
-# Rune Match Game
-
 ![Rune Match Banner](rune-match-banner.jpg "Rune Match - Norse-themed Match-3 Game")
+
+# Rune Match Game
 
 A Nordic-themed match-3 game with runes and mythological elements, built with vanilla JavaScript, jQuery, and Bootstrap 5 for [The Secret World](https://secretsotw.com/)
 ## Overview
