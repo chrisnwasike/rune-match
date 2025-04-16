@@ -1,7 +1,8 @@
 # Rune Match Game
 
-A Nordic-themed Match-3 puzzle game built with vanilla JavaScript, jQuery, and Bootstrap 5.
+![Rune Match Banner](rune-match-banner.jpg "Rune Match - Norse-themed Match-3 Game")
 
+A Nordic-themed match-3 game with runes and mythological elements, built with vanilla JavaScript, jQuery, and Bootstrap 5 for [The Secret World](https://secretsotw.com/)
 ## Overview
 
 Rune Match is a mini-game designed to integrate with a Nordic-themed gardening game. Players match 3 or more identical Norse runes by swapping adjacent pieces to earn resources (coins and seeds) that can be used in the main garden game.
