@@ -1,0 +1,89 @@
+# .htaccess - Apache configuration file
+
+# Enable rewrite engine
+# RewriteEngine On
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to config and include files directly
+# <FilesMatch "\.php$">
+#     <If "%{REQUEST_URI} =~ m#^/(config|includes|database)/#">
+#         Order allow,deny
+#         Deny from all
+#     </If>
+# </FilesMatch>
+
+# Protect database directory
+# <LocationMatch "^/database/">
+#     Order allow,deny
+#     Deny from all
+# </LocationMatch>
+
+# Protect vendor directory
+# <LocationMatch "^/vendor/">
+#     Order allow,deny
+#     Deny from all
+# </LocationMatch>
+
+# Set security headers
+<IfModule mod_headers.c>
+    # Protect against XSS attacks
+    # Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME-type sniffing
+    # Header set X-Content-Type-Options "nosniff"
+    
+    # Prevent clickjacking
+    # Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Content Security Policy
+    # Header set Content-Security-Policy "default-src 'self'; script-src 'self' https://code.jquery.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'"
+</IfModule>
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Set expiration headers for caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Audio
+    ExpiresByType audio/mpeg "access plus 1 year"
+    ExpiresByType audio/mp3 "access plus 1 year"
+    
+    # Default
+    ExpiresDefault "access plus 1 week"
+</IfModule>
+
+# PHP settings
+# php_value upload_max_filesize 10M
+# php_value post_max_size 10M
+# php_value max_execution_time 60
+# php_value max_input_time 60
+# php_value memory_limit 128M
+# php_flag session.cookie_httponly on
+# php_flag session.use_only_cookies on
+
+# Custom error pages
+ErrorDocument 404 /errors/404.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 500 /errors/500.php
